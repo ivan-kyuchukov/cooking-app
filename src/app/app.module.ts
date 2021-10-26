@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeContainerComponent } from './containers/home-container/home-container.component';
 import { HttpService } from './services/http.service';
 import { HomeComponent } from './components/home/home.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HomeComponent } from './components/home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatIconModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]
